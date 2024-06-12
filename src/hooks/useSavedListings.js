@@ -10,7 +10,7 @@ const useSavedListings = () => {
       try {
         const response = await fetch('/api/saved-listings');
         if (!response.ok) {
-          throw new Error("Sorry! There was an unexpected error loading the saved listing. Please try refreshing the page and if the problem persists contact support");
+          throw new Error("Sorry! There was an unexpected error loading the saved listings. Please try refreshing the page and if the problem persists contact support");
         }
         const data = await response.json();
         setSavedListings(data);
